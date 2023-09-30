@@ -1,7 +1,8 @@
 const elementosParaInserirLivros = document.querySelector("#livros")
 
-function exibirOsLivrosNaTela(lsitaDeLivros){
-    lsitaDeLivros.forEach(livro => {
+function exibirOsLivrosNaTela(listaDeLivros){
+    elementosParaInserirLivros.innerHTML= ''
+    listaDeLivros.forEach(livro => {
         elementosParaInserirLivros.innerHTML += `
         <div class="livro">
         <img class="livro__imagens" src="${livro.imagem}" />
